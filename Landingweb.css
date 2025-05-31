@@ -1,0 +1,271 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('UpSkillNow.webp') no-repeat center center fixed;
+  background-size: cover;
+  color: #eee;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header & Navbar */
+header {
+  background-color: rgba(13, 71, 161, 0.8);
+  padding: 20px 40px;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  padding: 80px 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 20px 20px;
+}
+
+.header h2 {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.header p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 30px;
+}
+
+.header button {
+  padding: 12px 30px;
+  background-color: rgba(255, 204, 0, 0.9);
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.header button:hover {
+  background-color: rgba(255, 179, 0, 0.9);
+}
+
+/* Features Section */
+.features {
+  padding: 60px 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 1200px;
+  margin: 40px auto;
+  border-radius: 12px;
+  text-align: center;
+  color: black;
+}
+
+.features h3 {
+  font-size: 28px;
+  color: rgba(13, 71, 161, 0.9);
+  margin-bottom: 40px;
+}
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.feature {
+  background-color: rgba(241, 241, 241, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.feature h4 {
+  font-size: 20px;
+  color: rgba(13, 71, 161, 0.9);
+  margin-bottom: 15px;
+}
+
+.feature p a {
+  color: rgba(13, 71, 161, 0.9);
+  text-decoration: underline;
+}
+
+/* Registration Section */
+.auth-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto 60px;
+}
+
+.auth-container h2{
+  color: blue;
+}
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-form label {
+  text-align: left;
+  color: #333;
+  font-weight: 500;
+}
+
+.auth-form input,
+.auth-form select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.auth-form input:focus,
+.auth-form select:focus {
+  outline: none;
+  border-color: rgba(13, 71, 161, 0.9);
+  box-shadow: 0 0 5px rgba(13, 71, 161, 0.3);
+}
+
+.auth-form button {
+  background-color: rgba(13, 71, 161, 0.9);
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-form button:hover {
+  background-color: rgba(21, 101, 192, 0.9);
+}
+
+.auth-form input::placeholder {
+  color: #777;
+}
+
+.form-note {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Contact (Optional) */
+.contact {
+  padding: 60px 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 700px;
+  margin: 60px auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.contact h3 {
+  font-size: 32px;
+  color: rgba(13, 71, 161, 0.9);
+  margin-bottom: 10px;
+}
+
+.contact p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+}
+
+form button {
+  background-color: rgba(13, 71, 161, 0.9);
+  color: #fff;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: rgba(21, 101, 192, 0.9);
+}
+
+/* Footer */
+footer {
+  background-color: rgba(13, 71, 161, 0.8);
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  font-size: 14px;
+}

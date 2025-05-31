@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UpSkillNow</title>
+  <link rel="stylesheet" href="Landingweb.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">UpSkillNow</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="course-fullstack.html">Full Stack Dev</a></li>
+        <li><a href="course-python.html">Data Science</a></li>
+        <li><a href="course-java.html">Java & Spring</a></li>
+        <!-- Removed Login and Sign Up -->
+      </ul>
+    </nav>
+  </header>
+
+  <section class="header">
+    <h2>Learn smarter. Achieve more.</h2>
+    <p>Gain real-world skills, expert mentorship, and flexible learning paths.</p>
+    <button onclick="document.getElementById('signup').scrollIntoView({behavior: 'smooth'});">Get Started</button>
+  </section>
+
+  <section id="features" class="features">
+    <h3>Our Key Features</h3>
+    <div class="feature-list">
+      <div class="feature">
+        <h4>Real-World Skills</h4>
+        <p><a href="course-fullstack.html">Explore Full Stack Web Dev</a></p>
+      </div>
+      <div class="feature">
+        <h4>Data & Analytics</h4>
+        <p><a href="course-python.html">Explore Data Science</a></p>
+      </div>
+      <div class="feature">
+        <h4>Enterprise Java</h4>
+        <p><a href="course-java.html">Explore Java & Spring</a></p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="signup" class="auth-container">
+    <h2>Register for a Course</h2>
+    <form class="auth-form" action="signup.php" method="POST">
+      <label for="signup-name">Full Name</label>
+      <input type="text" id="signup-name" name="full_name" required>
+
+      <label for="signup-email">Email</label>
+      <input type="email" id="signup-email" name="email" required>
+
+      <label for="signup-password">Password</label>
+      <input type="password" id="signup-password" name="password" required>
+
+      <label for="signup-course">Choose Course</label>
+      <select id="signup-course" name="course" required>
+        <option value="Select course">Select course</option>
+        <option value="Full Stack Web Development">Full Stack Web Development</option>
+        <option value="Data Science & Python">Data Science & Python</option>
+        <option value="Java & Spring Boot">Java & Spring Boot</option>
+      </select>
+
+      <button type="submit">Register</button>
+      <p class="form-note">📩 Check your email to confirm your registration.</p>
+    </form>
+  </section>
+
+  <footer>
+    <p>UpSkillNow</p>
+  </footer>
+</body>
+</html>

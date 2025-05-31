@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | UpSkillNow</title>
+  <link rel="stylesheet" href="Landingweb.css">
+</head>
+<body class="auth-page">
+  <div class="auth-container">
+    <h2>Create an Account</h2>
+    <form class="auth-form" action="signup.php" method="POST">
+      <label for="signup-name">Full Name</label>
+      <input type="text" id="signup-name" name="full_name" required>
+
+      <label for="signup-email">Email</label>
+      <input type="email" id="signup-email" name="email" required>
+
+      <label for="signup-password">Password</label>
+      <input type="password" id="signup-password" name="password" required>
+
+      <label for="signup-course">Choose Course</label>
+      <select id="signup-course" name="course" required>
+        <option value="Full Stack Web Development">Full Stack Web Development</option>
+        <option value="Data Science & Python">Data Science & Python</option>
+        <option value="Java & Spring Boot">Java & Spring Boot</option>
+      </select>
+
+      <button type="submit">Sign Up</button>
+      <p class="form-note">📩 Check your email to confirm your account.</p>
+    </form>
+  </div>
+</body>
+</html>
